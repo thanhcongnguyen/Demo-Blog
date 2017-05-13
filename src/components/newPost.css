@@ -1,0 +1,68 @@
+
+.txt-primary{
+	font-size: 14px;
+	color: #000;
+}
+.txt-info{
+	color: #888;
+	font-size:12px;
+}
+.create-date:before {
+    position: absolute;
+    content: '\f073';
+    font-family:'FontAwesome';
+    top: 0;
+    left: 0;
+
+}
+
+.create-date {
+    position: relative;
+    font-size: 11px;
+    color: #777;
+    padding-left:15px;
+    padding-bottom: 10px;
+}
+
+
+
+.new-post{
+	margin-top: 30px;
+}
+
+.title-section{
+	padding: 10px 0 ;
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.wiget-content  .thumb{
+}
+
+.wiget-content  .thumb img{
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+
+
+.wiget-content .wrapper-name-date h3{
+	margin-top: 0;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+
+.wiget-content li{
+	margin: 0 0 15px;
+    padding: 0 10px 15px 0;
+    border-bottom: 1px solid #f2f2f2;
+    min-height: 41px;
+}
+
+.wiget-content li a:hover{
+	color: #2292FF;
+}

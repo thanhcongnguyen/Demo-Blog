@@ -1,6 +1,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './components/app.js'
 
 
 // import xinchao from './xinchao.js'
@@ -15,6 +16,6 @@ import ReactDOM from 'react-dom'
 
 
 ReactDOM.render(
-<h1>congnguyen</h1>,
-document.getElementById('root')
+	<App/>,
+	document.getElementById('root')
 )

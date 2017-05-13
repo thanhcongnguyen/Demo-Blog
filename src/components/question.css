@@ -1,0 +1,14 @@
+.question{
+	margin-top: 30px;
+}
+
+.question strong {
+	margin-right: 50px;
+	padding: 5px 10px;
+	border: 1px solid #eee;
+}
+
+
+.actived{
+	background: #eee;
+}

@@ -1,0 +1,16 @@
+.anwsers{
+	margin-top: 20px;
+	padding: 10px;
+	border:1px solid #eee;
+	position: relative;
+}
+
+.anwsers span{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: #D54B3D;
+	color: #fff;
+	padding:3px 6px;
+	border-radius: 3px;
+}

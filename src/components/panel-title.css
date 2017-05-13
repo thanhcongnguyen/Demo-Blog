@@ -1,0 +1,23 @@
+.panel-title{
+	border-bottom: 2px solid #eee;
+}
+
+.active{
+	background: #eee;
+}
+.panel-title strong{
+	padding: 5px 10px;
+	display: inline-block;
+	border: 1px solid #eee;
+	margin-right: 10px;
+	border-bottom: none;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.panel-title strong:hover{
+	background: #eee;
+}
+
+

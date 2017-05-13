@@ -1,0 +1,38 @@
+#footer{
+	background: #101010;
+	color: #ccc;
+}
+
+.footer-wp{
+	font-size: 14px;
+	font-weight: 100;
+	font-family: "Lato", sans-serif;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.footer-wp a{
+	color: #ccc;
+}
+
+.footer-wp ul li{
+	float: left;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #606060;
+}
+
+.footer-wp ul li:last-child{
+	margin-right: 0;
+	border-right: none;
+	padding-right: 0;
+}
+.footer-wp ul li a{
+	display: block;
+}
+
+.copyright{
+	margin-top: 10px;
+}
