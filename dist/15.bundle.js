@@ -1,6 +1,38 @@
 webpackJsonp([15],{
 
-/***/ 252:
+/***/ 267:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(287);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(284)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./article.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./article.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -83,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -120,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -397,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -493,47 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 274:
+/***/ 287:
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(275);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./getanswer.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./getanswer.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 275:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".anwsers{\r\n\tmargin-top: 20px;\r\n\tpadding: 10px;\r\n\tborder:1px solid #eee;\r\n\tposition: relative;\r\n}\r\n\r\n.anwsers span{\r\n\tposition: absolute;\r\n\tright: 20px;\r\n\ttop: 20px;\r\n\tbackground: #D54B3D;\r\n\tcolor: #fff;\r\n\tpadding:3px 6px;\r\n\tborder-radius: 3px;\r\n}", ""]);
+exports.push([module.i, "#detail-content p{ \r\n\tpadding-bottom: 5px;\r\n\tline-height: 24px; \r\n\ttext-align: justify;\r\n}\r\n\r\n#detail-content p strong{\r\n\tfont-weight: normal;\r\n\ttext-align: justify;\r\n}\r\n#detail-content p img{\r\n    display: inline-block;\r\n    border: 1px solid #d0d0d0;\r\n    margin: 10px 0px;\r\n    width: 100%;\r\n}\r\n\r\n.content{\r\n\tpadding: 20px;\r\n\tbox-shadow: 0 13px 42px 11px rgba(0, 0, 0, 0.05);\r\n}", ""]);
 
 // exports
 

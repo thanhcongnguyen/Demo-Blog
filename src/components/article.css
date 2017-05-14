@@ -1,0 +1,21 @@
+#detail-content p{ 
+	padding-bottom: 5px;
+	line-height: 24px; 
+	text-align: justify;
+}
+
+#detail-content p strong{
+	font-weight: normal;
+	text-align: justify;
+}
+#detail-content p img{
+    display: inline-block;
+    border: 1px solid #d0d0d0;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.content{
+	padding: 20px;
+	box-shadow: 0 13px 42px 11px rgba(0, 0, 0, 0.05);
+}

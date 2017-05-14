@@ -1,12 +1,12 @@
 webpackJsonp([11],{
 
-/***/ 241:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(257);
+var content = __webpack_require__(291);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -14,14 +14,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
+var update = __webpack_require__(284)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./banner.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./banner.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./getanswer.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./getanswer.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -32,7 +32,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 252:
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -152,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -429,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -525,15 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 257:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".banner img{\r\n\tdisplay: block;\r\n\theight: 90px; \r\n\twidth: auto;\r\n\tmargin:20px auto;\r\n}", ""]);
+exports.push([module.i, ".anwsers{\r\n\tmargin-top: 20px;\r\n\tpadding: 10px;\r\n\tborder:1px solid #eee;\r\n\tposition: relative;\r\n}\r\n\r\n.anwsers span{\r\n\tposition: absolute;\r\n\tright: 20px;\r\n\ttop: 20px;\r\n\tbackground: #D54B3D;\r\n\tcolor: #fff;\r\n\tpadding:3px 6px;\r\n\tborder-radius: 3px;\r\n}", ""]);
 
 // exports
 

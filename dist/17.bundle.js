@@ -1,38 +1,6 @@
-webpackJsonp([7],{
+webpackJsonp([17],{
 
-/***/ 275:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(295);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(284)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./menu.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./menu.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 283:
+/***/ 258:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +83,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 284:
+/***/ 259:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -152,7 +120,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(285);
+	fixUrls = __webpack_require__(260);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -429,7 +397,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 285:
+/***/ 260:
 /***/ (function(module, exports) {
 
 
@@ -525,15 +493,47 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 295:
+/***/ 278:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(283)(undefined);
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(279);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(259)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./article.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./article.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 279:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(258)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#main-nav{\r\n\t\r\n}\r\n.main-menu >li{ float: left;}\r\n.main-menu li { position: relative; }\r\n.main-menu >li{ margin-right: 20px;  }\r\n.main-menu >li >a{\r\n\tfont-size: 13px;\r\n\tfont-family: \"Lato\", sans-serif;\r\n\tfont-weight: 600;\r\n\ttext-transform: uppercase;\r\n\tfont-style: normal;\r\n\theight: 60px;\r\n\tline-height: 40px;\r\n}\r\n.main-menu li a{\r\n\tpadding: 10px 15px;\r\n\tdisplay: inline-block;\r\n}\r\n\r\n.main-menu li a i{\r\n\tfont-size: 16px;\r\n}\r\n\r\n.main-menu  .sub-menu{ \r\n\tdisplay: none;\r\n\tposition: absolute;\r\n\tbackground: #eee;\r\n\tleft: 100%;\r\n\ttop: -3px;\r\n}\r\n\r\n.main-menu>li>.sub-menu{\r\n\ttop:59px; left: 0;\r\n}\r\n\r\n.main-menu li:hover>.sub-menu{\r\n\tdisplay: block;\r\n\tborder-top:3px solid #26B8F3;\r\n}\r\n.main-menu>li:hover>a, .main-menu>li:hover{\r\n    color: #1e90ff;\r\n}\r\n\r\n.main-menu li>.sub-menu{\r\n\tbackground: #fff ;\r\n\tbox-shadow: 0 13px 42px 11px rgba(0, 0, 0, 0.05);\r\n}\r\n.sub-menu{\r\n\tz-index: 7;\r\n}\r\n\r\n.sub-menu li a{\r\n\twidth: 200px ;\r\n\tfont-family: \"Lato\", sans-serif;\r\n    font-size: 13px;\r\n    font-weight: 400;\r\n    border-bottom: 1px solid #eee;\r\n    padding: 10px 20px 10px 18px;\r\n    -webkit-transition: padding .3s ease-in-out;\r\n    transition: padding .3s ease-in-out;\r\n\r\n}\r\n.sub-menu li:last-child a{\r\n\tborder-bottom:none;\r\n}\r\n\r\n.sub-menu>li a:hover{\r\n\tcolor: #333;\r\n\tbackground: rgba(211, 211, 211, 0.1);\r\n\tpadding: 10px 20px 10px 26px;\r\n\ttransition: padding .3s ease-in-out;\r\n\t-webkit-transition: padding .3s ease-in-out;\r\n\r\n}\r\n\r\n\r\n.menu-item-has-childrend>a:after{\r\n\tposition: absolute;\r\n    content:'\\F105';\r\n    font-family: 'FontAwesome';\r\n    right: 10px;\r\n    font-size: 14px;\r\n   }\r\n\r\n.has-submenu{\r\n\t\r\n}\r\n\r\n.has-submenu:after{\r\n\tcontent: '\\F107';\r\n\tfont-family: 'FontAwesome';\r\n\tposition: absolute;\r\n\ttop:20px;\r\n\tright: 0px;\r\n}\r\n", ""]);
+exports.push([module.i, "#detail-content p{ \r\n\tpadding-bottom: 5px;\r\n\tline-height: 24px; \r\n\ttext-align: justify;\r\n}\r\n\r\n#detail-content p strong{\r\n\tfont-weight: normal;\r\n\ttext-align: justify;\r\n}\r\n#detail-content p img{\r\n    display: inline-block;\r\n    border: 1px solid #d0d0d0;\r\n    margin: 10px 0px;\r\n    width: 100%;\r\n}", ""]);
 
 // exports
 

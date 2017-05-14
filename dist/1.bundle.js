@@ -1,12 +1,12 @@
 webpackJsonp([1],{
 
-/***/ 251:
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(267);
+var content = __webpack_require__(301);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -14,14 +14,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
+var update = __webpack_require__(284)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./tag.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./tag.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./sendquestion.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./sendquestion.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -32,7 +32,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 252:
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -152,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -429,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -525,15 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 267:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".tags{\r\n\t margin-bottom: 30px;\r\n}\r\n\r\n.tag-item{\r\n\tbackground: #f0f0f0;\r\n\tpadding: 5px 0 5px 10px;\r\n\tmargin-right: 20px;\r\n\tdisplay: inline-block;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.tag-item span{\r\n\tbackground: #1e90ff;\r\n\tpadding: 5px 10px ;\r\n\tmargin-left: 10px;\r\n\tcolor: #fff;\r\n}\r\n", ""]);
+exports.push([module.i, ".send-question{\r\n\tmargin-top: 30px;\r\n}", ""]);
 
 // exports
 

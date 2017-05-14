@@ -1,6 +1,38 @@
 webpackJsonp([16],{
 
-/***/ 252:
+/***/ 266:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(286);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(284)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./Subcribe.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./Subcribe.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -83,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -120,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -397,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -493,47 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 277:
+/***/ 286:
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(278);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./sendquestion.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./sendquestion.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 278:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".send-question{\r\n\tmargin-top: 30px;\r\n}", ""]);
+exports.push([module.i, ".subcribe{\r\n\tmargin-top: 10px;\r\n}\r\n\r\n.subcribe h3{\r\n\tpadding: 10px 0 ;\r\n\tmargin: 0;\r\n\tcolor: #000;\r\n\tfont-size: 20px;\r\n\tfont-weight: 300;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.subcribe input{\r\n\tfont-size: 13px;\r\n\tborder: 1px solid #efefef;\r\n}\r\n\r\n.subcribe input[type=\"submit\"]{\r\n\tfloat: right;\r\n\twidth: 25%;\r\n\theight: 36px;\r\n\tcolor: #333;\r\n\tbackground: #F0F0F0;\r\n\tborder: none;\r\n\tcursor: pointer;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.subcribe input[type=\"text\"]{\r\n\twidth: 75%;\r\n\tfloat: left;\r\n\tpadding: 8px 14px;\r\n\tbox-sizing: border-box;\r\n\r\n}\r\n\r\n.subcribe input[type=\"submit\"]:hover{\r\n\tcolor: #2292FF;\r\n}\r\n", ""]);
 
 // exports
 

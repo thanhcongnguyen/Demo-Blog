@@ -1,0 +1,21 @@
+.bvlq-detail{
+	background: #f0f0f0;
+}
+
+.bvlq-detail img{
+	width: 180px;
+	height: 120px;
+}
+.bvlq-detail h3{
+	margin:0;
+	font-size: 18px;
+	text-align: center;
+	padding:5px;
+}
+.bvlq-detail a:hover{
+	color: #1e90ff;
+}
+.slick-slide{
+	width: 180px !important;
+	margin-right: 10px !important;
+}

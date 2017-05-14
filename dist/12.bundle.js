@@ -1,12 +1,12 @@
 webpackJsonp([12],{
 
-/***/ 240:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(256);
+var content = __webpack_require__(290);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -14,14 +14,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
+var update = __webpack_require__(284)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./bRight.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./bRight.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./footer.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./footer.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -32,7 +32,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 252:
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -152,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -429,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -525,15 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 256:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".banner-right{\r\n\tmargin-top: 35px;\r\n}\r\n.banner-right img{\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: auto;\r\n}", ""]);
+exports.push([module.i, "#footer{\r\n\tbackground: #101010;\r\n\tcolor: #ccc;\r\n}\r\n\r\n.footer-wp{\r\n\tfont-size: 14px;\r\n\tfont-weight: 100;\r\n\tfont-family: \"Lato\", sans-serif;\r\n\twidth: 100%;\r\n\tpadding-top: 20px;\r\n\tpadding-bottom: 20px;\r\n}\r\n\r\n\r\n.footer-wp a{\r\n\tcolor: #ccc;\r\n}\r\n\r\n.footer-wp ul li{\r\n\tfloat: left;\r\n\tmargin-right: 10px;\r\n\tpadding-right: 10px;\r\n\tborder-right: 1px dotted #606060;\r\n}\r\n\r\n.footer-wp ul li:last-child{\r\n\tmargin-right: 0;\r\n\tborder-right: none;\r\n\tpadding-right: 0;\r\n}\r\n.footer-wp ul li a{\r\n\tdisplay: block;\r\n}\r\n\r\n.copyright{\r\n\tmargin-top: 10px;\r\n}", ""]);
 
 // exports
 

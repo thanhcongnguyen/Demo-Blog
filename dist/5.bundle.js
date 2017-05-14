@@ -1,12 +1,12 @@
 webpackJsonp([5],{
 
-/***/ 247:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(263);
+var content = __webpack_require__(297);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -14,14 +14,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(253)(content, options);
+var update = __webpack_require__(284)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./newPost.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./newPost.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./panel-title.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./panel-title.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -32,7 +32,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 252:
+/***/ 283:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +115,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 284:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -152,7 +152,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(285);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -429,7 +429,7 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 254:
+/***/ 285:
 /***/ (function(module, exports) {
 
 
@@ -525,15 +525,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ 263:
+/***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(252)(undefined);
+exports = module.exports = __webpack_require__(283)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\r\n.txt-primary{\r\n\tfont-size: 14px;\r\n\tcolor: #000;\r\n}\r\n.txt-info{\r\n\tcolor: #888;\r\n\tfont-size:12px;\r\n}\r\n.create-date:before {\r\n    position: absolute;\r\n    content: '\\F073';\r\n    font-family:'FontAwesome';\r\n    top: 0;\r\n    left: 0;\r\n\r\n}\r\n\r\n.create-date {\r\n    position: relative;\r\n    font-size: 11px;\r\n    color: #777;\r\n    padding-left:15px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n\r\n\r\n.new-post{\r\n\tmargin-top: 30px;\r\n}\r\n\r\n.title-section{\r\n\tpadding: 10px 0 ;\r\n\tcolor: #000;\r\n\tfont-size: 20px;\r\n\tfont-weight: 300;\r\n\ttext-transform: uppercase;\r\n}\r\n.wiget-content  .thumb{\r\n}\r\n\r\n.wiget-content  .thumb img{\r\n\tdisplay: block;\r\n\theight: 50px;\r\n\twidth: 50px;\r\n}\r\n\r\n\r\n\r\n.wiget-content .wrapper-name-date h3{\r\n\tmargin-top: 0;\r\n\tfont-size: 14px;\r\n\tfont-weight: 400;\r\n\ttext-transform: capitalize;\r\n\tword-wrap: break-word;\r\n}\r\n\r\n.wiget-content li{\r\n\tmargin: 0 0 15px;\r\n    padding: 0 10px 15px 0;\r\n    border-bottom: 1px solid #f2f2f2;\r\n    min-height: 41px;\r\n}\r\n\r\n.wiget-content li a:hover{\r\n\tcolor: #2292FF;\r\n}", ""]);
+exports.push([module.i, ".panel-title{\r\n\tborder-bottom: 2px solid #eee;\r\n}\r\n\r\n.active{\r\n\tbackground: #eee;\r\n}\r\n.panel-title strong{\r\n\tpadding: 5px 10px;\r\n\tdisplay: inline-block;\r\n\tborder: 1px solid #eee;\r\n\tmargin-right: 10px;\r\n\tborder-bottom: none;\r\n\ttext-transform: uppercase;\r\n\tfont-weight: 300;\r\n\tfont-size: 18px;\r\n}\r\n\r\n.panel-title strong:hover{\r\n\tbackground: #eee;\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
